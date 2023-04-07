@@ -16,13 +16,13 @@
     fastest: {
       label: "Fastest",
       icon: "time",
-      urlParams: "f.Status=AC&orderBy=time_consumption&f.LanguageName=Python3",
+      urlParams: "f.Status=AC&orderBy=time_consumption",
     },
     shortest: {
       label: "Shortest",
       icon: "flag",
       urlParams: "f.Status=AC&orderBy=source_length",
-    }
+    },
   };
 
   const buttons = Object.entries(buttonSettings).map(
