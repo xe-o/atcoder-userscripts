@@ -13,7 +13,7 @@
    - [Tampermonkey](https://www.tampermonkey.net/) (推奨)
    - [Violentmonkey](https://violentmonkey.github.io/get-it/)
 
-2. 各スクリプトの [Wiki ページ](https://github.com/xe-o/atcoder-userscripts/wiki) や [Greasy Fork のページ](https://greasyfork.org/ja/users/1054878-xero-cats)、または「インストール」の直リンクから、ユーザースクリプトをインストールします。
+2. 各スクリプトの [Wiki ページ](https://github.com/xe-o/atcoder-userscripts/wiki) や [Greasy Fork のページ](https://greasyfork.org/ja/users/1054878-xero-cats)、または「インストール」の直リンクから、ユーザースクリプトをインストールします。<br><br>
 
    | Wiki ページ                                      | Greasy Fork のページ         | インストール         | 追加日     | 更新日     |
    | ------------------------------------------------ | ---------------------------- | -------------------- | ---------- | ---------- |
@@ -31,4 +31,4 @@
 
 本リポジトリ上のスクリプトに関するご連絡は [@xero_cats](https://twitter.com/xero_cats) へお願いいたします。
 
-不具合やご意見などありましたら、お気軽にご連絡ください。Issue や Pull request の作成もお待ちしております。
+不具合やご意見などありましたら、お気軽にご連絡ください。[Issue](https://github.com/xe-o/atcoder-userscripts/issues) や [Pull request](https://github.com/xe-o/atcoder-userscripts/pulls) の作成もお待ちしております。
