@@ -5,6 +5,7 @@
 競技プログラミングサイト [AtCoder](https://atcoder.jp/) で使用できるユーザースクリプト群です。
 
 本リポジトリ上のスクリプトは、すべて [Greasy Fork](https://greasyfork.org/ja/users/1054878-xero-cats) でも公開しています。
+<br><br>
 
 ## インストール
 
@@ -12,8 +13,9 @@
 
    - [Tampermonkey](https://www.tampermonkey.net/) (推奨)
    - [Violentmonkey](https://violentmonkey.github.io/get-it/)
+     <br><br>
 
-2. 各スクリプトの [Wiki ページ](https://github.com/xe-o/atcoder-userscripts/wiki) や [Greasy Fork のページ](https://greasyfork.org/ja/users/1054878-xero-cats)、または「インストール」の直リンクから、ユーザースクリプトをインストールします。<br><br>
+2. 各スクリプトの [Wiki ページ](https://github.com/xe-o/atcoder-userscripts/wiki) や [Greasy Fork のページ](https://greasyfork.org/ja/users/1054878-xero-cats)、または **Install** の直リンクから、ユーザースクリプトをインストールします。<br>
 
    | Wiki ページ                                      | Greasy Fork のページ         | インストール         | 追加日     | 更新日     |
    | ------------------------------------------------ | ---------------------------- | -------------------- | ---------- | ---------- |
@@ -26,6 +28,7 @@
 [ahvst-gf]: https://greasyfork.org/ja/scripts/463444-atcoder-hide-virtual-standings-tab
 [aass-raw]: https://greasyfork.org/scripts/463453-atcoder-add-submissions-shortcuts/code/AtCoder%20Add%20Submissions%20Shortcuts.user.js
 [ahvst-raw]: https://greasyfork.org/scripts/463444-atcoder-hide-virtual-standings-tab/code/AtCoder%20Hide%20Virtual%20Standings%20Tab.user.js
+<br>
 
 ## 不具合・ご意見など
 

@@ -16,7 +16,7 @@ All scripts on this repository are also available on [Greasy Fork](https://greas
 2. Get information or install:
 
    - Learn more about userscripts from [Wiki](https://github.com/xe-o/atcoder-userscripts/wiki) or [Greasy Fork](https://greasyfork.org/ja/users/1054878-xero-cats) pages.
-   - Install a script directly by clicking on the "Install" link in the table below.<br><br>
+   - Install a script directly by clicking on the "Install" link in the table below.<br>
 
    | Userscript Wiki                                  | Greasy Fork Page             | Direct Install       | Added      | Updated    |
    | ------------------------------------------------ | ---------------------------- | -------------------- | ---------- | ---------- |
