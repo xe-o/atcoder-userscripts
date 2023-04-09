@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name            Style optimizer for single display
-// @name:ja         Style optimizer for single display
+// @name            Style Optimizer for Single Display
+// @name:ja         Style Optimizer for Single Display
 // @namespace       https://github.com/xe-o
 // @version         0.1
 // @description     Overrides AtCoder styles for single display
