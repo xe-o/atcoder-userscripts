@@ -15,13 +15,13 @@
 
 2. 各スクリプトの [Wiki ページ](https://github.com/xe-o/atcoder-userscripts/wiki) や [Greasy Fork のページ](https://greasyfork.org/ja/users/1054878-xero-cats)、または **Install** の直リンクから、ユーザースクリプトをインストールします。<br>
 
-   | Wiki ページ                                               | Greasy Fork のページ          | インストール          | 追加日     | 更新日     |
-   | --------------------------------------------------------- |:-----------------------------:|:---------------------:|:----------:|:----------:|
-   | [AtCoder Add Submissions Shortcuts][aass-wiki]            | [Greasy Fork Page][aass-gf]   | [Install][aass-raw]   | 2023-04-07 | 2023-04-12 |
-   | [AtCoder Hide Virtual Standings Tab][ahvst-wiki]          | [Greasy Fork Page][ahvst-gf]  | [Install][ahvst-raw]  | 2023-04-07 | 2023-04-07 |
-   | [AtCoder Style Optimizer for Single Display][aso4sd-wiki] | [Greasy Fork Page][aso4sd-gf] | [Install][aso4sd-raw] | 2023-04-09 | 2023-04-12 |
-   | [AtCoder Crouch Start][acs-wiki]                          | [Greasy Fork Page][acs-gf]    | [Install][acs-raw]    | 2023-04-09 | 2023-04-12 |
-   | [AtCoder Copy Contest ID][acci-wiki]                      | [Greasy Fork Page][acci-gf]   | [Install][acci-raw]   | 2023-04-12 | 2023-04-12 |
+   | Wiki ページ (スクリプト名)                                   |      GF ページ        |       直リンク         |   追加日    |   更新日    |
+   | --------------------------------------------------------- | :------------------: | :-------------------: | :--------: | :--------: |
+   | [AtCoder Add Submissions Shortcuts][aass-wiki]            |  [GF Page][aass-gf]  |  [Install][aass-raw]  | 2023.04.07 | 2023.04.12 |
+   | [AtCoder Hide Virtual Standings Tab][ahvst-wiki]          | [GF Page][ahvst-gf]  | [Install][ahvst-raw]  | 2023.04.07 | 2023.04.07 |
+   | [AtCoder Style Optimizer for Single Display][aso4sd-wiki] | [GF Page][aso4sd-gf] | [Install][aso4sd-raw] | 2023.04.09 | 2023.04.12 |
+   | [AtCoder Crouch Start][acs-wiki]                          |  [GF Page][acs-gf]   |  [Install][acs-raw]   | 2023.04.09 | 2023.04.12 |
+   | [AtCoder Copy Contest ID][acci-wiki]                      |  [GF Page][acci-gf]  |  [Install][acci-raw]  | 2023.04.12 | 2023.04.12 |
 
 ## 不具合・ご意見など
 
