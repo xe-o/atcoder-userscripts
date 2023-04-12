@@ -19,7 +19,7 @@ All scripts on this repository are also available on [Greasy Fork](https://greas
    - Install a script directly by clicking on the "Install" link in the table below.<br><br>
 
    | Userscript Wiki                                           | Greasy Fork Page              | Direct Install        | Added      | Updated    |
-   | --------------------------------------------------------- | ----------------------------- | --------------------- | ---------- | ---------- |
+   | --------------------------------------------------------- |:-----------------------------:|:---------------------:|:----------:|:----------:|
    | [AtCoder Add Submissions Shortcuts][aass-wiki]            | [Greasy Fork Page][aass-gf]   | [Install][aass-raw]   | 2023-04-07 | 2023-04-07 |
    | [AtCoder Hide Virtual Standings Tab][ahvst-wiki]          | [Greasy Fork Page][ahvst-gf]  | [Install][ahvst-raw]  | 2023-04-07 | 2023-04-07 |
    | [AtCoder Style Optimizer for Single Display][aso4sd-wiki] | [Greasy Fork Page][aso4sd-gf] | [Install][aso4sd-raw] | 2023-04-09 | 2023-04-09 |
