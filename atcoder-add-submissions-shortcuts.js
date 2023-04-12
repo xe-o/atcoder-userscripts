@@ -2,9 +2,10 @@
 // @name            AtCoder Add Submissions Shortcuts
 // @name:ja         AtCoder Add Submissions Shortcuts
 // @namespace       https://github.com/xe-o
-// @version         0.2
+// @version         0.3
 // @description     Add links to the AtCoder task page that open a list of submissions for the current task with custom filters applied.
 // @description:ja  AtCoderの各問題ページのタブメニューに対して、任意のフィルター・並び順を適用した状態でその問題の提出一覧を開くリンクを追加します。
+// @author          XERO
 // @license         MIT
 // @match           https://atcoder.jp/contests/*/tasks/*
 // @grant           GM_getValue

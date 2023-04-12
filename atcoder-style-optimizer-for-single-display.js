@@ -2,12 +2,13 @@
 // @name            AtCoder Style Optimizer for Single Display
 // @name:ja         AtCoder Style Optimizer for Single Display
 // @namespace       https://github.com/xe-o
-// @version         0.1
+// @version         0.2
 // @description     Overrides AtCoder styles for single display
 // @description:ja  シングルディスプレイ向けにAtCoderのスタイルを最適化します
 // @author          XERO
 // @license         MIT
 // @match           https://atcoder.jp/*
+// @run-at          document-start
 // @grant           none
 // ==/UserScript==
 
@@ -26,7 +27,7 @@
     }
   `;
 
-  const style = document.createElement("style");
-  style.textContent = css;
-  document.head.appendChild(style);
+  const styleNode = document.createTextNode(css);
+  document.head.insertAdjacentHTML("beforeend", "<style></style>");
+  document.head.lastElementChild.appendChild(styleNode);
 })();
