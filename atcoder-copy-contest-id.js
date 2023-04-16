@@ -2,7 +2,7 @@
 // @name               AtCoder Copy Contest ID
 // @name:ja            AtCoder Copy Contest ID
 // @namespace          https://github.com/xe-o
-// @version            0.1
+// @version            0.2
 // @description        Add a button to copy the contest ID to the clipboard in AtCoder contest pages
 // @description:ja     AtCoderコンテストページのナビゲーションバーへ、コンテストIDをコピーするためのボタンを追加します
 // @author             XERO
@@ -21,41 +21,48 @@ const COPY_BUTTON_HTML = `
     </a>
   </li>`;
 
-const $ = (selector) => document.querySelector(selector);
-const getContestID = () => window.location.pathname.split("/")[2];
+const copyContestId = (() => {
+  const $ = (selector, baseElement) =>
+    (baseElement || document).querySelector(selector);
+  const getContestID = () => window.location.pathname.split("/")[2];
+  return () => {
+    const navbarElement = $(".navbar-nav");
+    if (!navbarElement) throw new Error("Navbar element not found.");
+    navbarElement.insertAdjacentHTML("beforeend", COPY_BUTTON_HTML);
 
-const navbarElement = $(".navbar-nav");
-if (!navbarElement) throw new Error("Navbar element not found.");
-navbarElement.insertAdjacentHTML("beforeend", COPY_BUTTON_HTML);
+    const copyButton = $("#contest-id-copy-button");
+    copyButton.removeEventListener("click", copyToClipboard);
+    const copyButtonIcon = $(".glyphicon", copyButton);
+    const copyButtonLabel = $("#copy-button-text");
 
-const copyButton = $("#contest-id-copy-button");
-const copyButtonIcon = $(".glyphicon", copyButton);
-const copyButtonLabel = $("#copy-button-text");
+    async function copyToClipboard() {
+      try {
+        await GM_setClipboard(getContestID(), {
+          type: "text",
+          mimetype: "text/plain",
+        });
+        copyButtonIcon.classList.replace("glyphicon-copy", "glyphicon-ok");
+      } catch (error) {
+        console.error(`Failed to copy contest ID: ${error}`);
+        copyButtonIcon.classList.replace("glyphicon-copy", "glyphicon-remove");
+      } finally {
+        const copyResultText = copyButtonIcon.classList.contains("glyphicon-ok")
+          ? "Copied!"
+          : "Failed to copy";
+        copyButtonLabel.textContent = copyResultText;
+        setTimeout(() => {
+          copyButtonLabel.textContent = COPY_BUTTON_LABEL_INIT;
+          copyButtonIcon.classList.replace(
+            "glyphicon-ok",
+            "glyphicon-copy",
+            "glyphicon-remove"
+          );
+        }, 1800);
+      }
+    }
 
-async function copyToClipboard() {
-  try {
-    await GM_setClipboard(getContestID(), {
-      type: "text",
-      mimetype: "text/plain",
-    });
-    copyButtonIcon.classList.replace("glyphicon-copy", "glyphicon-ok");
-  } catch (error) {
-    console.error(`Failed to copy contest ID: ${error}`);
-    copyButtonIcon.classList.replace("glyphicon-copy", "glyphicon-remove");
-  } finally {
-    const copyResultText = copyButtonIcon.classList.contains("glyphicon-ok")
-      ? "Copied!"
-      : "Failed to copy.";
-    copyButtonLabel.textContent = copyResultText;
-    setTimeout(() => {
-      copyButtonLabel.textContent = COPY_BUTTON_LABEL_INIT;
-      copyButtonIcon.classList.replace(
-        "glyphicon-ok",
-        "glyphicon-copy",
-        "glyphicon-remove"
-      );
-    }, 1800);
-  }
-}
+    copyButton.addEventListener("click", copyToClipboard);
+  };
+})();
 
-copyButton.addEventListener("click", copyToClipboard);
+copyContestId();
