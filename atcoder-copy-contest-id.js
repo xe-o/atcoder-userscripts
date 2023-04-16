@@ -2,7 +2,7 @@
 // @name               AtCoder Copy Contest ID
 // @name:ja            AtCoder Copy Contest ID
 // @namespace          https://github.com/xe-o
-// @version            0.2
+// @version            0.3
 // @description        Add a button to copy the contest ID to the clipboard in AtCoder contest pages
 // @description:ja     AtCoderコンテストページのナビゲーションバーへ、コンテストIDをコピーするためのボタンを追加します
 // @author             XERO
@@ -12,57 +12,85 @@
 // @run-at             document-idle
 // ==/UserScript==
 
-const COPY_BUTTON_LABEL_INIT = "Copy Contest ID";
-const COPY_BUTTON_HTML = `
-  <li>
-    <a id="contest-id-copy-button" style="cursor: pointer; font-size: 12px">
-      <span class="glyphicon glyphicon-copy" style="margin-right: 2px" aria-hidden="true"></span>
-      <span id="copy-button-text">${COPY_BUTTON_LABEL_INIT}</span>
-    </a>
-  </li>`;
+const INIT_LABEL = "Copy Contest ID";
+const COPIED_LABEL = "Copied!";
+const FAILED_LABEL = "Failed to copy";
+const ICONS = {
+  COPY: "glyphicon-copy",
+  OK: "glyphicon-ok",
+  REMOVE: "glyphicon-remove",
+};
 
-const copyContestId = (() => {
-  const $ = (selector, baseElement) =>
-    (baseElement || document).querySelector(selector);
-  const getContestID = () => window.location.pathname.split("/")[2];
-  return () => {
-    const navbarElement = $(".navbar-nav");
-    if (!navbarElement) throw new Error("Navbar element not found.");
-    navbarElement.insertAdjacentHTML("beforeend", COPY_BUTTON_HTML);
+const copyContestId = () => {
+  const $ = (selector, baseElement = document) =>
+    baseElement.querySelector(selector);
+  const getContestId = () => window.location.pathname.split("/")[2];
+  const navbar = $(".navbar-nav");
+  const style = document.createElement("style");
+  style.innerHTML = `
+    @media (max-width: 991px) {
+      .contest-title {
+        width: auto;
+      }
+    }
+  `;
 
-    const copyButton = $("#contest-id-copy-button");
-    copyButton.removeEventListener("click", copyToClipboard);
-    const copyButtonIcon = $(".glyphicon", copyButton);
-    const copyButtonLabel = $("#copy-button-text");
+  const addCopyButton = () => {
+    if (!navbar) {
+      console.error("Failed to find navbar element.");
+      return;
+    }
+    navbar.insertAdjacentHTML(
+      "beforeend",
+      `
+      <li>
+        <a id="copy-contest-id-button" style="cursor: pointer; font-size: 12px">
+          <span class="glyphicon ${ICONS.COPY}" style="margin-right: 2px" aria-hidden="true"></span>
+          <span id="copy-button-text">${INIT_LABEL}</span>
+        </a>
+      </li>
+    `
+    );
+  };
 
-    async function copyToClipboard() {
+  const setupCopyButton = () => {
+    const button = $("#copy-contest-id-button");
+    const icon = $(".glyphicon", button);
+    const label = $("#copy-button-text");
+    let isCopying = false;
+
+    const resetButton = () => {
+      icon.classList.replace(ICONS.OK, ICONS.COPY, ICONS.REMOVE);
+      label.textContent = INIT_LABEL;
+      isCopying = false;
+    };
+
+    const copyToClipboard = async () => {
+      if (isCopying) return;
+      isCopying = true;
+
       try {
-        await GM_setClipboard(getContestID(), {
+        await GM_setClipboard(getContestId(), {
           type: "text",
           mimetype: "text/plain",
         });
-        copyButtonIcon.classList.replace("glyphicon-copy", "glyphicon-ok");
+        icon.classList.replace(ICONS.COPY, ICONS.OK);
+        label.textContent = COPIED_LABEL;
       } catch (error) {
         console.error(`Failed to copy contest ID: ${error}`);
-        copyButtonIcon.classList.replace("glyphicon-copy", "glyphicon-remove");
+        icon.classList.replace(ICONS.COPY, ICONS.REMOVE);
+        label.textContent = FAILED_LABEL;
       } finally {
-        const copyResultText = copyButtonIcon.classList.contains("glyphicon-ok")
-          ? "Copied!"
-          : "Failed to copy";
-        copyButtonLabel.textContent = copyResultText;
-        setTimeout(() => {
-          copyButtonLabel.textContent = COPY_BUTTON_LABEL_INIT;
-          copyButtonIcon.classList.replace(
-            "glyphicon-ok",
-            "glyphicon-copy",
-            "glyphicon-remove"
-          );
-        }, 1800);
+        setTimeout(resetButton, 1800);
       }
-    }
+    };
 
-    copyButton.addEventListener("click", copyToClipboard);
+    button.addEventListener("click", copyToClipboard);
   };
-})();
+
+  document.head.appendChild(style);
+  addCopyButton();
+  setupCopyButton();
+};
 
 copyContestId();
