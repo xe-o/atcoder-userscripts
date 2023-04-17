@@ -22,7 +22,7 @@
    | [AtCoder Style Optimizer for Single Display][aso4sd-wiki] | [GF Page][aso4sd-gf] | [Install][aso4sd-raw] | 2023.04.09 | 2023.04.12 |
    | [AtCoder Crouch Start][acs-wiki]                          |  [GF Page][acs-gf]   |  [Install][acs-raw]   | 2023.04.09 | 2023.04.12 |
    | [AtCoder Copy Contest ID][acci-wiki]                      |  [GF Page][acci-gf]  |  [Install][acci-raw]  | 2023.04.12 | 2023.04.12 |
-   | [AtCoder Better Font][abf-wiki]                           |  [GF Page][abf-gf]   |  [Install][abf-raw]   | 2023.04.12 | 2023.04.12 |
+   | [AtCoder Better Font][abf-wiki]                           |  [GF Page][abf-gf]   |  [Install][abf-raw]   | 2023.04.17 | 2023.04.17 |
 
 ## 不具合・ご意見など
 
