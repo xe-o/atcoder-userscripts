@@ -3,8 +3,8 @@
 // @name:ja         AtCoder Crouch Start
 // @namespace       https://github.com/xe-o
 // @version         0.2
-// @description     Add a link to problem A on upcoming AtCoder contest pages
-// @description:ja  AtCoderの開始前のコンテストページにA問題へのリンクを追加します
+// @description     Add a link to problem A on upcoming AtCoder contest pages.
+// @description:ja  AtCoderの開始前のコンテストページにA問題へのリンクを追加します。
 // @author          XERO
 // @license         MIT
 // @match           https://atcoder.jp/contests/*

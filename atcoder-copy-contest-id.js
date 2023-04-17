@@ -3,8 +3,8 @@
 // @name:ja            AtCoder Copy Contest ID
 // @namespace          https://github.com/xe-o
 // @version            0.3
-// @description        Add a button to copy the contest ID to the clipboard in AtCoder contest pages
-// @description:ja     AtCoderコンテストページのナビゲーションバーへ、コンテストIDをコピーするためのボタンを追加します
+// @description        Add a button to copy the contest ID to the clipboard in AtCoder contest pages.
+// @description:ja     AtCoderコンテストページのナビゲーションバーへ、コンテストIDをコピーするためのボタンを追加します。
 // @author             XERO
 // @license            MIT
 // @match              https://atcoder.jp/*

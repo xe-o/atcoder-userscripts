@@ -3,8 +3,8 @@
 // @name:ja         AtCoder Better Font
 // @namespace       https://github.com/xe-o
 // @version         0.1
-// @description     Make fonts on AtCoder more readable
-// @description:ja  AtCoderのフォントをより見やすくします
+// @description     Make fonts on AtCoder more readable.
+// @description:ja  AtCoderのフォントをより見やすくします。
 // @author          XERO
 // @license         MIT
 // @match           https://atcoder.jp/*

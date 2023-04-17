@@ -3,8 +3,8 @@
 // @name:ja         AtCoder Style Optimizer for Single Display
 // @namespace       https://github.com/xe-o
 // @version         0.2
-// @description     Overrides AtCoder styles for single display
-// @description:ja  シングルディスプレイ向けにAtCoderのスタイルを最適化します
+// @description     Overrides AtCoder styles for single display.
+// @description:ja  シングルディスプレイ向けにAtCoderのスタイルを最適化します。
 // @author          XERO
 // @license         MIT
 // @match           https://atcoder.jp/*
