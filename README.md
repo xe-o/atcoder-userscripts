@@ -22,6 +22,7 @@
    | [AtCoder Style Optimizer for Single Display][aso4sd-wiki] | [GF Page][aso4sd-gf] | [Install][aso4sd-raw] | 2023.04.09 | 2023.04.12 |
    | [AtCoder Crouch Start][acs-wiki]                          |  [GF Page][acs-gf]   |  [Install][acs-raw]   | 2023.04.09 | 2023.04.12 |
    | [AtCoder Copy Contest ID][acci-wiki]                      |  [GF Page][acci-gf]  |  [Install][acci-raw]  | 2023.04.12 | 2023.04.12 |
+   | [AtCoder Better Font][abf-wiki]                           |  [GF Page][abf-gf]   |  [Install][abf-raw]   | 2023.04.12 | 2023.04.12 |
 
 ## 不具合・ご意見など
 
@@ -34,15 +35,18 @@
 [aso4sd-wiki]: https://github.com/xe-o/atcoder-userscripts/wiki/AtCoder-Style-Optimizer-for-Single-Display
 [acci-wiki]: https://github.com/xe-o/atcoder-userscripts/wiki/AtCoder-Copy-Contest-ID
 [acs-wiki]: https://github.com/xe-o/atcoder-userscripts/wiki/AtCoder-Crouch-Start
+[abf-wiki]: https://github.com/xe-o/atcoder-userscripts/wiki/AtCoder-Better-Font
 
 [aass-gf]: https://greasyfork.org/ja/scripts/463453-atcoder-add-submissions-shortcuts
 [ahvst-gf]: https://greasyfork.org/ja/scripts/463444-atcoder-hide-virtual-standings-tab
 [aso4sd-gf]: https://greasyfork.org/ja/scripts/463585-atcoder-style-optimizer-for-single-display
 [acci-gf]: https://greasyfork.org/ja/scripts/463842-atcoder-copy-contest-id
 [acs-gf]: https://greasyfork.org/ja/scripts/463845-atcoder-crouch-start
+[abf-gf]: https://greasyfork.org/ja/scripts/464188-atcoder-better-font
 
 [aass-raw]: https://greasyfork.org/scripts/463453-atcoder-add-submissions-shortcuts/code/AtCoder%20Add%20Submissions%20Shortcuts.user.js
 [ahvst-raw]: https://greasyfork.org/scripts/463444-atcoder-hide-virtual-standings-tab/code/AtCoder%20Hide%20Virtual%20Standings%20Tab.user.js
 [aso4sd-raw]: https://greasyfork.org/scripts/463585-atcoder-style-optimizer-for-single-display/code/AtCoder%20Style%20Optimizer%20for%20Single%20Display.user.js
 [acci-raw]: https://greasyfork.org/scripts/463842-atcoder-copy-contest-id/code/AtCoder%20Copy%20Contest%20ID.user.js
 [acs-raw]: https://greasyfork.org/scripts/463845-atcoder-crouch-start/code/AtCoder%20Crouch%20Start.user.js
+[abf-raw]: https://greasyfork.org/scripts/464188-atcoder-better-font/code/AtCoder%20Better%20Font.user.js
