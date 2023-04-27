@@ -2,9 +2,9 @@
 // @name               AtCoder Copy Contest ID
 // @name:ja            AtCoder Copy Contest ID
 // @namespace          https://github.com/xe-o
-// @version            0.3
-// @description        Add a button to copy the contest ID to the clipboard in AtCoder contest pages.
-// @description:ja     AtCoderコンテストページのナビゲーションバーへ、コンテストIDをコピーするためのボタンを追加します。
+// @version            0.4
+// @description        Add a button to copy the contest ID to the clipboard in AtCoder contest pages
+// @description:ja     AtCoderコンテストページのナビゲーションバーへ、コンテストIDをコピーするためのボタンを追加します
 // @author             XERO
 // @license            MIT
 // @match              https://atcoder.jp/*
@@ -31,6 +31,27 @@ const copyContestId = () => {
     @media (max-width: 991px) {
       .contest-title {
         width: auto;
+      }
+    }
+    @media (max-width: 1150px) {
+      .contest-title {
+        width: auto;
+        max-width: 580px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      #copy-button-text {
+        display: none;
+      }
+    }
+    @media (max-width: 1000px) {
+      .contest-title {
+        width: auto;
+        max-width: 300px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
       }
     }
   `;
