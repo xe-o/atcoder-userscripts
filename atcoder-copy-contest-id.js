@@ -54,6 +54,22 @@ const copyContestId = () => {
         text-overflow: ellipsis;
       }
     }
+
+    @media (max-width: 767px) {
+      .contest-title {
+        width: auto;
+        max-width: none;
+      }
+      #copy-button-text {
+        display: inline;
+      }
+    }
+
+    .header-nav .j-menu_gnav a {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
   `;
 
   const addCopyButton = () => {
