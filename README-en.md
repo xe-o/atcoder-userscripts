@@ -22,9 +22,9 @@ All scripts on this repository are also available on [Greasy Fork](https://greas
    | --------------------------------------------------------- | :------------------: | :-------------------: | :--------: | :--------: |
    | [AtCoder Add Submissions Shortcuts][aass-wiki]            |  [GF Page][aass-gf]  |  [Install][aass-raw]  | 2023.04.07 | 2023.04.12 |
    | [AtCoder Hide Virtual Standings Tab][ahvst-wiki]          | [GF Page][ahvst-gf]  | [Install][ahvst-raw]  | 2023.04.07 | 2023.04.07 |
-   | [AtCoder Style Optimizer for Single Display][aso4sd-wiki] | [GF Page][aso4sd-gf] | [Install][aso4sd-raw] | 2023.04.09 | 2023.04.12 |
+   | [AtCoder Style Optimizer for Single Display][aso4sd-wiki] | [GF Page][aso4sd-gf] | [Install][aso4sd-raw] | 2023.04.09 | 2023.04.27 |
    | [AtCoder Crouch Start][acs-wiki]                          |  [GF Page][acs-gf]   |  [Install][acs-raw]   | 2023.04.09 | 2023.04.12 |
-   | [AtCoder Copy Contest ID][acci-wiki]                      |  [GF Page][acci-gf]  |  [Install][acci-raw]  | 2023.04.12 | 2023.04.12 |
+   | [AtCoder Copy Contest ID][acci-wiki]                      |  [GF Page][acci-gf]  |  [Install][acci-raw]  | 2023.04.12 | 2023.04.27 |
    | [AtCoder Better Font][abf-wiki]                           |  [GF Page][abf-gf]   |  [Install][abf-raw]   | 2023.04.17 | 2023.04.17 |
 
 [aass-wiki]: https://github.com/xe-o/atcoder-userscripts/wiki/AtCoder-Add-Submissions-Shortcuts
