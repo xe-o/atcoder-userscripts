@@ -2,7 +2,7 @@
 // @name            AtCoder Style Optimizer for Single Display
 // @name:ja         AtCoder Style Optimizer for Single Display
 // @namespace       https://github.com/xe-o
-// @version         0.3
+// @version         0.4
 // @description     Overrides AtCoder styles for single display
 // @description:ja  シングルディスプレイ向けにAtCoderのスタイルを最適化します
 // @author          XERO
@@ -58,10 +58,6 @@
       #contest-nav-tabs > ul > li > a {
         font-size: 12px;
         padding: 6px 8px;
-      }
-
-      #contest-nav-tabs > ul > li:nth-child(1), li:nth-child(4) {
-        display: none;
       }
     }
 
